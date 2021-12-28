@@ -1,0 +1,86 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+/* HEADER  */
+header {
+	padding: 1rem 2vw;
+	h1 {font-size: 1.6rem;}
+	h2 {font-size: 1.2rem;}
+} // end header
+
+
+
+/*  ----------------------- NAVIGATION --------------------------- */
+
+nav {
+	button {
+        margin: .2rem 2%;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #333;
+    }
+	
+	background-color: $menuColor;
+    ul { 
+		display: none;
+		margin:0; 
+		padding: 0;
+		border-top: 1px solid rgba(0,0,0,0.1);
+	}
+	ul.open{display: block;}
+	
+    ul li {
+		list-style-type: none;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	} //end ul li
+    
+    ul li a {
+        display: block;
+        text-align: center;
+        font-weight: $lightWeight;
+        padding: .9rem 0;
+        color: rgba(0,0,0,0.8);
+        text-decoration: none;  
+    } // end of anchors
+    
+	 
+	 ul li.active a {
+        background-color: darken($menuColor, 8%);
+    } // end of active
+	
+	ul li a:hover{background-color: darken($menuColor, 4%);}
+	
+} // end nav
+
+
+
+
+
+
+
+/* MAIN  */
+main p {padding: .5rem 2vw;}
+
+
+
+/* FOOTER  */
+footer {
+	background-color: black; 
+	padding: 1rem 0;
+	color: #eee;
+	text-align: center;
+	a{color: #eee;}
+}

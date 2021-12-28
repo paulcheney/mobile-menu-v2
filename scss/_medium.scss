@@ -1,0 +1,18 @@
+/*  ----------------------- NAVIGATION --------------------------- */
+nav {
+	button {display: none;}
+	ul#primaryNav {
+		margin-left: 2%;
+		border:none;// undo small screen top border
+		display: flex;
+		justify-content: flex-start;
+	} // end ul
+	
+	ul li {border:none;}// undo small screen top border
+	ul li a { 
+		padding: .9rem 1.2rem;
+	}
+	
+	
+	
+} // end nav
