@@ -114,7 +114,7 @@ header {
 
 /*  ----------------------- NAVIGATION --------------------------- */
 nav {
-  background-color: orange; }
+  background-color: #b0b9d8; }
   nav button {
     margin: .2rem 2%;
     background: transparent;
@@ -139,13 +139,19 @@ nav {
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none; }
   nav ul li.active a {
-    background-color: #d68b00; }
+    background-color: #95a1cb; }
   nav ul li a:hover {
-    background-color: #eb9800; }
+    background-color: #a2add1; }
 
 /* MAIN  */
-main p {
-  padding: .5rem 2vw; }
+main {
+  grid-row-start: 3; }
+  main p {
+    padding: .5rem 2vw; }
+  main h1 {
+    padding: .5rem 2vw;
+    font-size: 2rem;
+    color: #254bd7; }
 
 /* FOOTER  */
 footer {
